@@ -1,15 +1,15 @@
 {
-  "expo": {
-    "name": "dam_m8_uf2_a2_camara",
-    "slug": "dam_m8_uf2_a2_camara",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+  "expo":{
+      "name": "dam_m8_uf2_a2_camara",
+      "slug": "dam_m8_uf2_a2_camara",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -25,6 +25,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-  }
+    }         
+  },   
+  
+  "plugins": [
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+            "recordAudioAndroid": true
+          }
+        ]
+  ]
+  
 }
